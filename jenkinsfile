@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
+            
                 git 'https://github.com/denish3436/nodejs-app.git'
             }
         }
