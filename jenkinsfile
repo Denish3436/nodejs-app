@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                checkout scmGit(branches: [[name: 'main']],
                 git 'https://github.com/denish3436/nodejs-app.git'
             }
         }
